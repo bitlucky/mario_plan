@@ -8,12 +8,12 @@ class SignUp extends Component {
         Lastname: ''
     }
 
-    handleSubmit = (e) => {
+    handleChange = (e) => {
         this.setState({
             [e.target.id]: e.target.value
         })
     }
-    handleChange = (e) => {
+    handleSubmit = (e) => {
         e.preventDefault();
         console.log(this.state);
     }
